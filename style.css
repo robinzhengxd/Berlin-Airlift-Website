@@ -65,6 +65,7 @@ Footer / Nav Bar
 	
 }
 
+
 .navbar-inverse {
 	background-color:#333;
     border-color: #333;
@@ -114,21 +115,28 @@ Articles
 h2.article-header {
 	
 	    text-align: center;
-		font-size:18px;
-		font-family: 'Merriweather', serif;
+		font-size:20px;
+		font-family: 'Fjalla One', sans-serif;
 		font-weight:700;
 		border-bottom:solid #2B388F medium;
 		padding-bottom: 20px;
     	margin: 0 25%;
     	margin-bottom: 20px;
+		line-height: 1.8;
+		letter-spacing:2px;
+		text-transform:uppercase;
+
 }
 
 p.body-copy {
 		font-family: 'Merriweather', serif;
-		font-size:15px;
+		font-size:18px;
 		text-align: justify;
-		padding: 0 25%;
 		line-height: 1.8;
+		
+		max-width: 650px;
+		  margin: 0 auto;
+		  padding: 0 35px;
 }
 
 
@@ -142,6 +150,44 @@ body#Home-Page .container {
 	background:url(images/background-home.png) no-repeat center top;
 	width:100%;
 	height:auto;
+	background-size: contain;
+
+}
+
+body#Home-Page .container.airforce {
+	background:url(images/background-airforce.png) no-repeat center top;
+	width:100%;
+	height:auto;
+	background-size: contain;
+	
+}
+
+.nav-airforce {
+	opacity:0;
+	background-color:#fff;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	margin-left: -30px;
+	-webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.nav-airforce.active {
+	opacity:1;
+	background-color:#fff;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	}
+	
+.tagline-airforce {
 	
 }
 
@@ -152,8 +198,6 @@ body#Home-Page .container {
 #north, #south, #east, #west {
 	 z-index: +2;
 	 background-color:#00B2D7;
-	 height:30px;
-	width:30px;
 	position: fixed;
 	font-size:12px;
 	text-align:center;
@@ -163,10 +207,10 @@ body#Home-Page .container {
 #north {
 	
 	height:30px;
-	width:55px;
-  top: 0;
-  left: 50%;
-  background:url(images/icon-nav-north.png) no-repeat center center;
+	width:50px;
+	top: 0;
+	left: 50%;
+	background-color:#1B75B9;
 
 }
 
@@ -175,6 +219,10 @@ body#Home-Page .container {
 
 	left: 50%;
     bottom: 0;
+	height:30px;
+	width:50px;
+	background-color:#9C1F63;
+	
 }
 
 #east {
@@ -182,6 +230,9 @@ body#Home-Page .container {
 	right: 0;
   	top: 50%;
   	transform: translateY(-50%);
+	height:50px;
+	width:30px;
+	background-color:#8E278C;
 }
 
 
@@ -190,9 +241,20 @@ body#Home-Page .container {
 	left: 0;
   	top: 50%;
   	transform: translateY(-50%);
+	height:50px;
+	width:30px;
+	background-color:#2B388D; 
 }
 
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+.material-icons.vertical {color: white;
+  	padding-top: 50%;
+	
+}
+
+.material-icons.horizontal {color: white;
+	
+}
 
 /*---------------------------------
 "BERLIN AIRLIFT" Front Page Title Text
@@ -202,19 +264,19 @@ body#Home-Page .container {
 
 	  text-align: center;
 	      padding: 0 15%;
-		margin-top: 75px;
+		margin-top: 11%;
 
 }
 
 h2#introduction-text {
 
   margin: 0 auto;
-  padding: 0 15%;
   height: auto;
   position: relative;
   text-align:center;
   margin-top: 110px;
-  line-height: 1.5;
+  padding: 0px 40px;
+  max-width: 900px;
 }
 
 
@@ -266,7 +328,8 @@ Introduction Paragraph
 	text-align: justify;
 	padding: 0px 15%;
 	font-family: 'Merriweather', serif;
-	line-height: 1.5;}
+	line-height: 1.8;
+	font-size: 21px;}
 	
 /*-----------------
 Timeline
@@ -274,11 +337,11 @@ Timeline
 
 #Timeline-Title{
 	text-align:center;
-	font-size:28px;
+    font-size: 30px;
 	margin-top: 75px;
 	margin-bottom: 70px;
 	font-family: 'Fjalla One', sans-serif;
-	letter-spacing:1px;
+	letter-spacing:2px;
 
 }
 
@@ -286,7 +349,9 @@ Timeline
 .col-sm-4{
 	text-align:right;
 	margin-bottom: 90px;
+	padding: 0px 45px;
 }
+
 
 p.timeline-year {
 	
@@ -306,9 +371,11 @@ p.timeline-month {
 
 }
 p.timeline-description {
-    max-width: 400px;
-	font-family: 'Merriweather', serif;
-    padding-top: 9px;
+  max-width: 600px;
+  	font-family: 'Merriweather', serif;
+	padding-top: 3px;
+	font-size: 18px;
+	 margin-bottom: 40px;
 }
 
 
@@ -322,6 +389,7 @@ body#Western-Allies-Page .container {
 	background:url(images/background-western-allies.png) no-repeat center top;
 	width:100%;
 	height:auto;
+	background-size: contain;
 	}
 
 /*-------------------------------
@@ -332,6 +400,19 @@ Images
 	background:url(images/img-western-allies-1.png) no-repeat center center;
 	width:100%;
 	height:auto;	
+	margin-top: 30px;
+}
+
+.caption {
+	
+	width:100%;
+	height:auto;	
+	margin-top: 10px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-style:italic;
+	padding-left:30px;
+	padding-right:30px;
+
 }
 
 #inset-1 {
@@ -340,11 +421,43 @@ Images
     position: relative;
 	}
 	
+	
 #inset-2 {
     float: right;
     margin: 30px -180px 30px 30px;
     position: relative;
 	}
+	
+span.text-content {
+  background: rgba(46,49,143,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  height: 296px;
+  width: 398px;
+  padding: 50px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size:18px;
+	font-weight:200;
+	-webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#inset-2:hover span.text-content {
+  opacity: 1;
+}
 	    
 /*-------------------------------
 Illustrations
@@ -354,6 +467,18 @@ img#illustration-1 {
 	
 	margin-top: 100px;
     margin-bottom: 30px;
+	
+}
+
+
+/*--------------------------------------MEDIA QUERY: HOMEPAGE----------------------------------*/
+
+
+@media screen and (max-width: 1000px) {
+    h1#Site-title-Berlin, h1#Site-title-Airlift {
+    font-size: 45px;
+    }
+	
 	
 }
 
